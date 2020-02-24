@@ -8,3 +8,104 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
+.container {
+    width: 1190px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+// HEADER
+.header {
+    &-nav {
+        &-logo {}
+        &-menu {
+            &__item {
+                a {}
+            }
+        }
+    }
+}
+
+// MAIN-SLIDER
+.main-slider {
+    &-items {}
+}
+
+// SERVICES
+.services {
+    &-header {}
+    &-items {
+        &__service {
+            &-image {}
+            &-title {}
+            &-description {}
+            &-link {}
+        }
+    }
+}
+
+// TEAM
+.team {
+    &-header {}
+    &-items {
+        &__member {
+            &-photo {}
+            &-name {}
+            &-description {}
+        }
+    }
+}
+
+// CLIENTS
+.clients {
+    &-header {}
+    &-items {
+        &-slider {
+            &__slide {}
+        }
+    }
+}
+
+// ARTICLES
+.articles {
+    &-header {}
+    &-items {
+        &__article {
+            &-date {
+                &-day {}
+                &-month {}
+            }
+            &-content {
+                &-header {}
+                &-text {}
+            }
+        }
+    }
+}
+
+// FEEDBACK
+.feedback {
+    &-header {}
+    &-items {
+        &-slider {
+            &__item {}
+        }
+    }
+}
+
+// FOOTER
+.footer {
+    &-items {
+        &-left {
+            &__logo {}
+            &__address {}
+        }
+        &-middle {
+            &__map {}
+        }
+        &-right {}
+    }
+}

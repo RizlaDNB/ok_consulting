@@ -1,1 +1,1 @@
-*,::after,::before{box-sizing:border-box}
+*,::after,::before{box-sizing:border-box}.container{width:1190px;margin:0 auto;padding-left:10px;padding-right:10px}
