@@ -1,0 +1,13 @@
+.separator {
+    margin-bottom: 20px;
+    &-top {
+        height: 20px;
+        width: 100%;
+    }
+    &-bottom {
+        height: 20px;
+        width: 100%;
+
+        border-top: 1px solid #e0e0e0;
+    }
+}

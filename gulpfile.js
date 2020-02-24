@@ -6,11 +6,11 @@ const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 function style () {
-    return gulp.src('./scss/**/*.scss')
+    return gulp.src('./scss/style.scss')
         .pipe(sass())
         .pipe(gulp.dest('./css'))
         .pipe(csso())
-        .pipe(rename('style.min.css'))
+        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream());
 }

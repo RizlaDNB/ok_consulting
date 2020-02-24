@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отдел Кадров</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
 </head>
 <body>
     <!-- HEADER START-->
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
+            <div class="header-nav">
                 <div class="header-nav-logo">
                     Отдел Кадров
                 </div>
-                <div class="header-nav-menu">
+                <nav class="header-nav-menu">
                     <ul>
                         <li class="header-nav-menu__item"><a href="#">Главная</a></li>
                         <li class="header-nav-menu__item"><a href="#">О нас</a></li>
@@ -24,8 +26,8 @@
                         <li class="header-nav-menu__item"><a href="#">Обучение</a></li>
                         <li class="header-nav-menu__item"><a href="#">Контакты</a></li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- HEADER END -->
@@ -35,7 +37,7 @@
     <!-- SLIDER START -->
     <section class="main-slider">
         <div class="container">
-            <h1 class="visually-hidden">Преимущества работы с нами</h1>
+            <h2 class="main-slider-header header visually-hidden">Преимущества работы с нами</h1>
             <div class="main-slider-items">
                 INSERT SLIDER
             </div>
@@ -46,91 +48,118 @@
     <!-- SERVICES START -->
     <section class="services">
         <div class="container">
-            <h1 class="services-header visually-hidden">Наши услуги</h1>
+            <h2 class="services-header header visually-hidden">Наши услуги</h1>
             <div class="services-items">
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Кадровое делопроизводство</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, rerum eius officiis repellendus repudiandae ducimus impedit vel iusto. Fugit nam ipsa dolorem fuga aperiam dignissimos reprehenderit minima blanditiis repellat officia.</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Кадровое делопроизводство</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, rerum eius officiis repellendus repudiandae ducimus impedit vel iusto. Fugit nam ipsa dolorem fuga aperiam dignissimos reprehenderit minima blanditiis repellat officia.</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Локальные нормативные акты</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Локальные нормативные акты</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Организация воинского учета</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Организация воинского учета</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Организация обработки персональных данных</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Организация обработки персональных данных</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Обучение и организационная политика</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Обучение и организационная политика</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
-                <div class="services-items__service">
-                    <div class="services-items__service-image"></div>
-                    <h2 class="services-items__service-title">Организация набора персонала</h2>
-                    <p class="services-items__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
-                    <a href="#" class="services-items__service-link">Узнать больше</a>
+                <div class="service">
+                    <div class="service__image"></div>
+                    <h2 class="service__title">Организация набора персонала</h2>
+                    <p class="service__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium dolore quas odio esse reiciendis tempore fuga omnis iusto totam officiis laboriosam, tempora, cumque necessitatibus doloremque aliquam alias! Illum, culpa!</p>
+                    <a href="#" class="service__link">Узнать больше</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- SERVICES END -->
 
+    <!-- SECTION SEPARATOR START -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator-top"></div>
+            <div class="separator-bottom"></div>
+        </div>
+    </section>
+    <!-- SECTION SEPARATOR END -->
+
     <!-- TEAM START -->
     <section class="team">
         <div class="container">
-            <h1 class="team-header">Наша команда</h1>
+            <h2 class="team-header header">Наша команда</h1>
             <div class="team-items">
-                <div class="team-items__member">
-                    <div class="team-items__member-photo">
-                        <img src="" alt="">
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <img src="img/member-foto-example.jpg" alt="">
                     </div>
-                    <div class="team-items__member-name">
-                        <p></p>
-                        <span></span>
-                    </div>
-                    <div class="team-items__member-decription">
-                        <p></p>
-                        <a href="#"></a>
-                    </div>
-                </div>
-                <div class="team-items__member">
-                    <div class="team-items__member-photo">
-                        <img src="" alt="">
-                    </div>
-                    <div class="team-items__member-name">
-                        <p></p>
-                        <span></span>
-                    </div>
-                    <div class="team-items__member-decription">
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="team-member__description">
+                        <div class="team-member__description-name">
+                            <h5>Имя</h5>
+                            <span>Должность</span>
+                        </div>
+                        <div class="team-member__description-content">
+                            <p>Lorem ipsum dolor sit met, conteturing elit. Phasellus pellentesque osure risus lacinia tristique Fusce sed massa</p>
+                        </div>
+                        <div class="team-member__description-link">
+                            <a href="#">
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="team-items__member">
-                    <div class="team-items__member-photo">
-                        <img src="" alt="">
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <img src="img/member-foto-example.jpg" alt="">
                     </div>
-                    <div class="team-items__member-name">
-                        <p></p>
-                        <span></span>
+                    <div class="team-member__description">
+                        <div class="team-member__description-name">
+                            <h5>Имя</h5>
+                            <span>Должность</span>
+                        </div>
+                        <div class="team-member__description-content">
+                            <p>Lorem ipsum dolor sit met, conteturing elit. Phasellus pellentesque osure risus lacinia tristique Fusce sed massa</p>
+                        </div>
+                        <div class="team-member__description-link">
+                            <a href="#">
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="team-items__member-decription">
-                        <p></p>
-                        <a href="#"></a>
+                </div>
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <img src="img/member-foto-example.jpg" alt="">
+                    </div>
+                    <div class="team-member__description">
+                        <div class="team-member__description-name">
+                            <h5>Имя</h5>
+                            <span>Должность</span>
+                        </div>
+                        <div class="team-member__description-content">
+                            <p>Lorem ipsum dolor sit met, conteturing elit. Phasellus pellentesque osure risus lacinia tristique Fusce sed massa</p>
+                        </div>
+                        <div class="team-member__description-link">
+                            <a href="#">
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,54 +167,76 @@
     </section>
     <!-- TEAM END -->
 
+    <!-- SECTION SEPARATOR START -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator-top"></div>
+            <div class="separator-bottom"></div>
+        </div>
+    </section>
+    <!-- SECTION SEPARATOR END -->
+
     <!-- CLIENTS START -->
     <section class="clients">
         <div class="container">
-            <h1 class="clients-header">Наши клиенты</h1>
+            <h2 class="clients-header header visually-hidden">Наши клиенты</h1>
             <div class="clients-slider">
                 <div class="clients-slider-items">
-                    <div class="clients-slider-items__slide"><img src="" alt="client1"></div>
-                    <div class="clients-slider-items__slide"><img src="" alt="client2"></div>
-                    <div class="clients-slider-items__slide"><img src="" alt="client3"></div>
-                    <div class="clients-slider-items__slide"><img src="" alt="client4"></div>
-                    <div class="clients-slider-items__slide"><img src="" alt="client5"></div>
+                    <div class="clients-slider-items__slide"><img src="img/company_logo.png" alt="client1"></div>
+                    <div class="clients-slider-items__slide"><img src="img/company_logo.png" alt="client2"></div>
+                    <div class="clients-slider-items__slide"><img src="img/company_logo.png" alt="client3"></div>
+                    <div class="clients-slider-items__slide"><img src="img/company_logo.png" alt="client4"></div>
+                    <div class="clients-slider-items__slide"><img src="img/company_logo.png" alt="client5"></div>
                 </div>
             </div>
         </div>
     </section>
     <!-- CLIENTS END -->
 
+    <!-- SECTION SEPARATOR START -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator-top"></div>
+            <div class="separator-bottom"></div>
+        </div>
+    </section>
+    <!-- SECTION SEPARATOR END -->
+
     <!-- ARTICLES START -->
     <section class="articles">
         <div class="container">
-            <h1 class="articles-header">Статьи</h1>
+            <h2 class="articles-header header">Статьи</h1>
             <div class="articles-items">
-                <div class="articles-items__article">
-                    <div class="articles-items__article-date">
-                        <div class="articles-items__article-date-day">
+                <div class="article">
+                    <div class="article__date">
+                        <div class="article__date-day">
                             <p>23</p>
                         </div>
-                        <div class="articles-items__article-date-month">
+                        <div class="article__date-month">
                             <p>НОЯ</p>
                         </div>
                     </div>
-                    <div class="articles-items__article-content">
-                        <h2 class="articles-items__article-content-header">Заголовок</h2>
-                        <p class="articles-items__article-content-text">Текст статьи</p>
+                    <div class="article__content">
+                        <div class="article__content-header">
+                            <a href="#">Заголовок</a>
+                        </div>
+                        <p class="article__content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, ipsam esse exercitationem qui accusamus inventore assumenda ducimus aperiam. Provident itaque necessitatibus eligendi temporibus explicabo qui doloribus earum officia aliquid sequi?</p>
                     </div>
                 </div>
-                <div class="articles-items__article">
-                    <div class="articles-items__article-date">
-                        <div class="articles-items__article-date-day">
-                            <p>12</p>
+                <div class="article">
+                    <div class="article__date">
+                        <div class="article__date-day">
+                            <p>23</p>
                         </div>
-                        <div class="articles-items__article-date-month">
-                            <p>ФЕВ</p>
+                        <div class="article__date-month">
+                            <p>НОЯ</p>
                         </div>
                     </div>
-                    <div class="articles-items__article-content">
-                        <h2 class="articles-items__article-content-header">Заголовок</h2>
-                        <p class="articles-items__article-content-text">Текст статьи</p>
+                    <div class="article__content">
+                        <div class="article__content-header">
+                            <a href="#">Заголовок</a>
+                        </div>
+                        <p class="article__content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, ipsam esse exercitationem qui accusamus inventore assumenda ducimus aperiam. Provident itaque necessitatibus eligendi temporibus explicabo qui doloribus earum officia aliquid sequi?</p>
                     </div>
                 </div>
             </div>
@@ -193,10 +244,19 @@
     </section>
     <!-- ARTICLES END -->
 
+    <!-- SECTION SEPARATOR START -->
+    <section class="separator">
+        <div class="container">
+            <div class="separator-top"></div>
+            <div class="separator-bottom"></div>
+        </div>
+    </section>
+    <!-- SECTION SEPARATOR END -->
+
     <!-- FEEDBACK START -->
     <section class="feedback">
         <div class="container">
-            <h1 class="feedback-header">Отзывы</h1>
+            <h2 class="feedback-header header">Отзывы</h1>
             <div class="feedback-items">
                 <div class="feedback-items-slider">
                     <div class="feedback-items-slider__item">Отзыв №1</div>
@@ -214,12 +274,20 @@
             <div class="footer-items">
                 <div class="footer-items-left">
                     <div class="footer-items-left__logo">
-                        <a href="#"></a>
+                        <a href="#">
+                            <img src="" alt="LOGO">
+                        </a>
                     </div>
                     <div class="footer-items-left__address">
-                        <p>adress</p>
-                        <a href="#">tel</a>
-                        <a href="#">email</a>
+                        <div>
+                            <p class="location">Калининград, пл. Калинина д.21</p>
+                        </div>
+                        <div>
+                            <a class="phone" href="tel:84012605605">+74012605605</a>
+                        </div>
+                        <div>
+                            <a class="email" href="mailto:test@yandex.ru">test@yandex.ru</a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-items-middle">

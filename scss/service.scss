@@ -1,0 +1,17 @@
+.service {
+    padding: 10px;
+    &__image {}
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &__description {
+        @include font-Verdana();
+        @include font-alt-color();
+        font-size: 13px;
+        line-height: 20px;
+    }
+    &__link {
+        @include font-link-color();
+    }
+}
