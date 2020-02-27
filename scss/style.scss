@@ -35,7 +35,7 @@ body {
     padding-right: 10px;
 }
 
-.header {
+.header-text {
     font-size: 20px;
     line-height: 28px;
 
@@ -53,6 +53,8 @@ body {
         justify-content: space-between;
         align-items: center;
         &-logo {
+            font-size: 20px;
+            line-height: 28px;
             a {
                 display: flex;
                 align-items: center;
@@ -101,7 +103,7 @@ body {
                         border-radius: 20%;
     
                         position: absolute;
-                        bottom: -30px;
+                        bottom: -28px;
                         left: 50%;
                         transform: translateX(-50%);
 
@@ -122,6 +124,7 @@ body {
 
 .nav-selected {
     a {
+        color: #e8524d;
         &::after {
             content: '';
             width: 50px;
@@ -130,7 +133,7 @@ body {
             border-radius: 20%;
 
             position: absolute;
-            bottom: -30px;
+            bottom: -28px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -141,13 +144,16 @@ body {
 .features-slider {
     background-color: #7e7e7e;
 
-    height: 200px;
+    height: 400px;
 
     &-items {}
 }
+@import 'features-slide.scss';
+@import 'features-slider-buttons.scss';
 
 // SERVICES
 .services {
+    margin-top: 20px;
     margin-bottom: 20px;
     &-header {}
     &-items {
