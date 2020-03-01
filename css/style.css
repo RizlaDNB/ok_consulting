@@ -97,6 +97,7 @@ input[type="radio"].visually-hidden {
     transform: translateX(-50%); }
 
 .features-slider {
+  background-color: #7e7e7e;
   height: 400px; }
 
 .feature-slide {
@@ -117,7 +118,7 @@ input[type="radio"].visually-hidden {
       margin: 0;
       padding: 0;
       text-align: center;
-      color: #000000; }
+      color: #ffffff; }
     .feature-slide__description-bg {
       position: absolute;
       top: 0;
@@ -129,7 +130,7 @@ input[type="radio"].visually-hidden {
   .feature-slide__image {
     position: relative;
     z-index: 0;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     width: 100%;
     height: 100%;
     background-size: 1170px; }
@@ -138,28 +139,30 @@ input[type="radio"].visually-hidden {
   bottom: 25%;
   left: 15%; }
 
-.--image-individual {
-  background: url(../img/features-slider/individual.jpg) center no-repeat;
+.--image-boss {
+  background: url(../img/features-slider/boss.jpg) top no-repeat;
   background-size: cover; }
+
+.--description-money {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #0f0f0f; }
+  .--description-money p {
+    color: #000000; }
 
 .--image-money {
-  background: url(../img/features-slider/money.jpg) center no-repeat;
+  background: url(../img/features-slider/earnings.jpg) center no-repeat;
   background-size: cover; }
 
-.--image-result {
-  background: url(../img/features-slider/result.jpg) bottom no-repeat;
-  background-size: cover; }
+.--description-people {
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 300px; }
 
-.--image-objective {
-  background: url(../img/features-slider/objective.jpg) center no-repeat;
-  background-size: cover; }
-
-.--image-risk {
-  background: url(../img/features-slider/risk.jpg) center no-repeat;
-  background-size: cover; }
-
-.--image-experience {
-  background: url(../img/features-slider/experience.jpg) center no-repeat;
+.--image-people {
+  background: url(../img/features-slider/team.jpg) center no-repeat;
   background-size: cover; }
 
 .prev-features {
