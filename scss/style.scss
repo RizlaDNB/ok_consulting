@@ -1,4 +1,9 @@
-// VARS
+// VARIABLES
+$xs: (max-width: 575.98px);
+$sm: (min-width: 576px) and (max-width: 767.98px);
+$md: (min-width: 768px) and (max-width: 991.98px);
+$lg: (min-width: 992px) and (max-width: 1259.98px);
+$xl: (min-width: 1260px);
 
 // MIXINS
 @mixin font-Playfair-Display {
@@ -53,6 +58,7 @@ body {
         justify-content: space-between;
         align-items: center;
         &-logo {
+            min-width: 168px;
             font-size: 20px;
             line-height: 28px;
             a {
@@ -142,9 +148,9 @@ body {
 
 // FEATURES-SLIDER
 .features-slider {
-    background-color: #7e7e7e;
-
     height: 400px;
+
+    margin-bottom: 40px;
 
     &-items {}
 }
@@ -153,62 +159,22 @@ body {
 
 // SERVICES
 .services {
-    margin-top: 20px;
     margin-bottom: 20px;
     &-header {}
     &-items {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 @import 'service.scss';
 
-// TEAM
-.team {
-    &-header {
-        margin-bottom: 20px;
 
-        text-align: center;
-
-        h2 {
-            padding: 0;
-            margin: 0;
-        }
-    }
-    &-items {
-        display: flex;
-        justify-content: center;
-    }
-}
-@import 'team-member.scss';
-
-// CLIENTS
-.clients {
-    margin-bottom: 20px;
-    &-header {}
-    &-slider {
-        &-items {
-            display: flex;
-            &__slide {
-                height: 106px;
-                width: 205px;
-
-                padding: 0 20px;
-                margin: 0 auto;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
-}
 
 // ARTICLES
 .articles {
     &-header {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
 
         text-align: center;
 
@@ -220,18 +186,79 @@ body {
 }
 @import 'article.scss';
 
+
+
+// CLIENTS
+.clients {
+    margin-bottom: 20px;
+    &-header {}
+    &-slider {
+        &-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            &__slide {
+                flex-shrink: 0;
+
+                height: 106px;
+                width: 205px;
+
+                margin-bottom: 15px;
+                padding: 10px 15px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
 // FEEDBACK
 .feedback {
     margin-bottom: 20px;
     &-header {
+        margin-bottom: 40px;
+
         text-align: center;
     }
-    &-items {
-        &-slider {
-            &__item {}
+    &-slider {
+        &-wrapper {
+            padding: 0 50px;
         }
     }
 }
+@import 'feedback-slide.scss';
+@import 'feedback-slider-buttons.scss';
+
+
+
+// TEAM
+.team {
+    margin-bottom: 20px;
+
+    &-header {
+        margin-bottom: 40px;
+
+        text-align: center;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@import 'team-member.scss';
+
+
 
 // FOOTER
 .footer {
@@ -240,10 +267,21 @@ body {
         display: flex;
         justify-content: space-between;
 
+        @media #{$xs} {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &-left {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media #{$xs} {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
             &__logo {
                 a {
                     display: flex;
@@ -273,13 +311,13 @@ body {
                 a {
                     text-decoration: none;
 
-                    margin-right: 20px;
+                    padding: 10px;
                 }
 
                 .svg-social {
                     height: 40px;
 
-                    transition: all 0.2s ease-in;
+                    transition: all 0.1s ease-in;
 
                     fill: #7e7e7e;
 
@@ -290,6 +328,8 @@ body {
             }
         }
         &-right {
+            margin-top: 20px;
+
             &__address {
                 @include font-Verdana();
                 @include font-alt-color();
@@ -297,7 +337,10 @@ body {
                 line-height: 18px;
 
                 padding-left: 25px;
-                margin-top: 20px;
+
+                @media #{$xs} {
+                    text-align: center;
+                }
                 
                 p {
                     margin: 0;
@@ -311,6 +354,12 @@ body {
                     color: inherit;
 
                     margin-bottom: 20px;
+
+                    transition: all 0.1s ease-in;
+
+                    &:hover {
+                        color: #e8524d;
+                    }
                 }
 
                 .location {
@@ -358,6 +407,8 @@ body {
         }
     }
 }
+
+
 
 // SECTION SEPARATOR
 @import 'section-separator.scss';

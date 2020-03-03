@@ -1,4 +1,4 @@
-.prev-features {
+.prev-feedback {
     position: absolute;
     top: 50%;
     left: 0;
@@ -29,12 +29,12 @@
     }
 
     &:hover {
-        background-color: rgba(#e7e7e7, 0.1);
+        background-color: rgba(#e7e7e7, 0.5);
         transition: all 0.1s ease-in;
     }
 }
 
-.next-features {
+.next-feedback {
     position: absolute;
     top: 50%;
     right: 0;
@@ -64,6 +64,6 @@
     }
 
     &:hover {
-        background-color: rgba(#e7e7e7, 0.1);
+        background-color: rgba(#e7e7e7, 0.5);
     }
 }
