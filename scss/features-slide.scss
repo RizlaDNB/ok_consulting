@@ -51,43 +51,20 @@
     }
 }
 
-.--description-boss {
-        bottom: 25%;
-        left: 15%;
-}
-.--image-boss {
-    background: url(../img/features-slider/boss.jpg) top no-repeat;
+
+.--image-risk {
+    background: url(../img/features-slider/risk.jpg) top no-repeat;
     background-size: cover;
 }
 
 
-
-.--description-money {
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border: 1px solid #0f0f0f;
-
-    p {
-        color: #000000;
-    }
-}
 .--image-money {
-    background: url(../img/features-slider/earnings.jpg) center no-repeat;
+    background: url(../img/features-slider/money.jpg) top no-repeat;
     background-size: cover;
 }
 
 
-
-.--description-people {
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-
-    width: 300px;
-}
-.--image-people {
-    background: url(../img/features-slider/team.jpg) center no-repeat;
+.--image-individual {
+    background: url(../img/features-slider/individual.jpg) center no-repeat;
     background-size: cover;
 }

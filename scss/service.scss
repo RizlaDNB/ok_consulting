@@ -3,11 +3,17 @@
 
     text-align: center;
 
-    flex-basis: 15%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media #{$xl, $lg} {
+        max-width: 200px;
+    }
+    @media #{$md, $sm, $xs} {
+        width: 200px;
+    }
+    
     &__image {
         img {
             width: 100%;
@@ -23,5 +29,9 @@
         text-decoration: underline dotted;
 
         @include font-link-color();
+
+        &:hover, &:focus {
+            text-decoration: underline solid;
+        }
     }
 }
