@@ -1,2 +1,1 @@
-# ok_consulting
- 
+https://rizladnb.github.io/ok_consulting/
